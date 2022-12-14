@@ -11,6 +11,16 @@ int findSet(int a, int *set)
     }
     return a;
 }
+
+if find (int a, int *set)
+{
+    if (a == set[a])
+    {
+        return a;
+    }
+    return set[a] = find(set[a], set);
+}
+
 void unionSet(int a, int b, int *set)
 {
     int setA = findSet(a, set);
